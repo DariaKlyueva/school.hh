@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/title"
+            android:textColor="@color/color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="15dp"
+            android:text="@string/name"
+            android:textColor="@color/color"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name"
+            android:layout_alignBottom="@+id/name"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/name"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/last"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/first"
+            android:layout_alignBottom="@+id/first"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/first"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/first"
+            android:layout_below="@+id/first"
+            android:layout_marginTop="15dp"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/color"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/date_text"
+            android:layout_alignBottom="@+id/date_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/date_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/date_text"
+            android:layout_below="@+id/date_text"
+            android:layout_marginTop="15dp"
+            android:text="@string/person_gender"
+            android:textColor="@color/color"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gender_text"
+            android:layout_alignBottom="@+id/gender_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/gender_text"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/position_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gender_text"
+            android:layout_below="@+id/gender_text"
+            android:layout_marginTop="15dp"
+            android:text="@string/person_position"
+            android:textColor="@color/color"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/salary_text"
+            android:layout_alignBottom="@+id/salary_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/salary_text"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/salary_text"
+            android:layout_below="@+id/salary_text"
+            android:layout_marginTop="15dp"
+            android:text="@string/person_phone"
+            android:textColor="@color/color"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/phone_text"
+            android:layout_alignBottom="@+id/phone_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/phone_text"
+            android:autoLink="phone"
+            android:linksClickable="true"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/mail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/phone_text"
+            android:layout_below="@+id/phone_text"
+            android:layout_marginTop="15dp"
+            android:text="@string/person_email"
+            android:textColor="@color/color"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mail_text"
+            android:layout_alignBottom="@+id/mail_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mail_text"
+            android:autoLink="email"
+            android:linksClickable="true"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mail_text"
+            android:layout_below="@+id/mail_text"
+            android:layout_marginTop="15dp"
+            android:text="@string/respond"
+            android:textColor="@color/color"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/respond_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/answer"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/respondHint"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="5"
+            android:minLines="5" />
+
+        <Button
+            android:id="@+id/respond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/respond_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/answer"
+            android:textColor="@color/color"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/salary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/position_text"
+            android:layout_below="@+id/position"
+            android:layout_marginTop="15dp"
+            android:text="@string/person_salary"
+            android:textColor="@color/color"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/position_text"
+            android:layout_below="@+id/position_text"
+            android:lines="3"
+            android:maxWidth="220dp"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+</ScrollView>

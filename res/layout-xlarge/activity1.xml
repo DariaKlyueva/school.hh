@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/title"
+            android:textColor="@color/text_color"
+            android:textSize="70sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="150dp"
+            android:text="@string/last_name"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/last"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lastname"
+            android:layout_alignBottom="@+id/lastname"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:ems="10"
+            android:hint="@string/lastNameHint"
+            android:inputType="textPersonName|textCapWords" />
+
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_below="@+id/last"
+            android:layout_marginTop="40dp"
+            android:text="@string/first_name"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/middlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_below="@+id/first"
+            android:layout_marginTop="40dp"
+            android:text="@string/middle_name"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateofbirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_below="@+id/middle"
+            android:layout_marginTop="40dp"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="40dp"
+            android:text="@string/person_gender"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/position_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_below="@+id/gender"
+            android:layout_marginTop="40dp"
+            android:text="@string/person_position"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/salary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_below="@+id/position"
+            android:layout_marginTop="40dp"
+            android:text="@string/person_salary"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_below="@+id/salary"
+            android:layout_marginTop="40dp"
+            android:text="@string/person_phone"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastname"
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="40dp"
+            android:text="@string/person_email"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/first"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/firstname"
+            android:layout_alignBottom="@+id/firstname"
+            android:layout_alignLeft="@+id/last"
+            android:ems="10"
+            android:hint="@string/firstNamrHint"
+            android:inputType="textPersonName|textCapWords" />
+
+        <EditText
+            android:id="@+id/middle"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/middlename"
+            android:layout_alignBottom="@+id/middlename"
+            android:layout_alignLeft="@+id/last"
+            android:ems="10"
+            android:hint="@string/middleNameHint"
+            android:inputType="textPersonName|textCapWords" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dateofbirth"
+            android:layout_alignBottom="@+id/dateofbirth"
+            android:layout_alignLeft="@+id/last"
+            android:textSize="20sp"
+            android:hint="@string/dateHint"
+            android:onClick="onclick" />
+
+        <EditText
+            android:id="@+id/salary"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/salary_text"
+            android:layout_alignBottom="@+id/salary_text"
+            android:layout_alignLeft="@+id/last"
+            android:ems="10"
+            android:hint="@string/salaryHint"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/phone_text"
+            android:layout_alignBottom="@+id/phone_text"
+            android:layout_alignLeft="@+id/last"
+            android:ems="10"
+            android:hint="@string/phoneHint"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/email"
+            android:layout_alignBottom="@+id/email"
+            android:layout_alignLeft="@+id/last"
+            android:ems="10"
+            android:hint="@string/emailHint"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/position"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gender"
+            android:layout_alignRight="@+id/gender"
+            android:layout_alignTop="@+id/position_text"
+            android:ems="10"
+            android:hint="@string/positionHint"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="5"
+            android:maxHeight="200dp"
+            android:maxWidth="@dimen/activity_horizontal_margin"
+            android:scrollbars="vertical" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/gender_text"
+            android:layout_alignLeft="@+id/date"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/send"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>
